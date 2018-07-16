@@ -30,7 +30,7 @@ print(y)
 from sklearn.model_selection import train_test_split
 X_train,X_test,y_train,y_test = train_test_split(X,y,test_size=0.2,random_state=0)
 print(X_train)
-#Scaling data in between the range of -1 to 1 so no coloumn dominate
+#Scaling data so no coloumn dominate
 from sklearn.preprocessing import StandardScaler
 sc_X = StandardScaler()
 X_train = sc_X.fit_transform(X_train)
